@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "E:/devel/helper/homography/projects/LightGlue/export.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--img_size", "1024","1024", "--extractor_path", "weights/superpoint.onnx", "--lightglue_path", "weights/superpoint_lightglue.onnx", "--max_num_keypoints", "2048"]
+        }
+    ]
+}
