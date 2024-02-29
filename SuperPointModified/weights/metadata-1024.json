@@ -1,0 +1,40 @@
+{
+	"common" : 
+	{
+		"architecture" : "SuperPoint_LightGlue",
+		"modelRepresentation" : "onnx",
+		"netType" : "PointMatching",
+		"weightType" : "FP32"
+	},
+	"input" : 
+	{
+		"dynamicBatch" : false,
+		"height" : 1024,
+		"normalizationValues" : 
+		[
+			{
+				"mean" : 0,
+				"scale" : 0.00392157
+			}
+		],
+		"numChannels" : 1,
+		"pixelFormat" : "GRAY",
+		"resizePolicy" : "AsIs",
+		"width" : 1024
+	},
+	"modelDescription" : 
+	{
+		"author" : "",
+		"description" : "",
+		"task" : "Homography"
+	},
+	"networkParams" :
+	{
+		"PointMatching" :
+		{
+			"maxNumKeypoints" : 2048,
+			"numDescriptors" : 256
+		}
+	},
+	"version" : "0.2.0"
+}
